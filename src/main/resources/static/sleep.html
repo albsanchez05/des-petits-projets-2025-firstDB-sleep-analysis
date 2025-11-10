@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sleep Health Dataset</title>
+    <link rel="stylesheet" href="sleep.css">
+</head>
+<body>
+
+<div class="header-container">
+    <div class="header-text">
+<h1>Sleep Health Dataset:</h1>
+<h3>It comprises 400 rows and 13 columns, covering a wide range of variables related to sleep and daily habits.
+    It includes details such as gender, age, occupation, sleep duration, quality of
+    sleep, physical activity level, stress levels, BMI category, blood pressure,
+    heart rate, daily steps, and the presence or absence of sleep disorders.</h3>
+<h5>Source: https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset</h5>
+
+    </div>
+
+    <img src="/images/good-night-sleep.jpg" alt="Illustration de sommeil" class="header-image">
+</div>
+
+<div class="controls-container">
+    <div class="control-group">
+        <button id="btn-get-all">Load All Records</button>
+        <button id="btn-avg-occupation">Analyze Average by Occupation</button>
+        <button id="btn-avg-gender">Analyze Average by Gender</button>
+    </div>
+
+    <div class="control-group">
+        <select id="select-occupation">
+            <option value="">-- Select Occupation --</option>
+        </select>
+        <button id="btn-query-occupation">Query by Occupation</button>
+    </div>
+
+    <div class="control-group">
+        <select id="select-disorder">
+            <option value="">-- Select Disorder --</option>
+        </select>
+        <button id="btn-query-disorder">Query by Disorder</button>
+    </div>
+</div>
+
+<div id="notifications"> Status: Idle </div>
+<pre id="results-panel">--- Results will be shown here ---</pre>
+<script src="sleep.js"></script>
+</body>
+</html>
